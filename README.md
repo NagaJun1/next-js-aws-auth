@@ -1,4 +1,12 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+`aws` の `Cognito` によるユーザー登録、ログインロジックを実装
+（認証はサーバーサイドで実装。クライアントで実現すると、環境変数が dev ツールで見えてしまうため）
+
+.env で以下の設定が必要
+
+```.env
+COGNITO_USER_POOL_ID=「amazon Cognito のユーザープールID」
+COGNITO_CLIENT_ID=「ユーザープール内のアプリケーションクライアントのクライアントID」
+```
 
 ## Getting Started
 
